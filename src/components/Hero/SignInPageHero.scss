@@ -1,0 +1,54 @@
+.heroImage {
+    background-attachment: scroll;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+}
+.signInBannerWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    width: 100%;
+    padding: 4em;
+}
+.signInBanner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30em;
+    padding: 3em 4em;
+    background-color: var(--blackTrans);
+}
+.signInForm {
+    width: 100%;
+}
+.formTitle {
+    margin-bottom: 1em;
+    font-size: 2em;
+}
+.inputField {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1em;
+    padding: .2em 1em .5em 1em;
+    background-color: var(--white);
+    color: var(--black);
+    border-radius: 4px;
+    span {
+        width: 100%;
+        font-family: "NetflixSansLight";
+        font-size: .7em;
+    }
+    input {
+        width: 100%;
+        font-family: "NetflixSansLight";
+        font-size: 1em;
+        border: none;
+        outline: none;
+    }
+}

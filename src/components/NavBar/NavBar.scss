@@ -1,0 +1,17 @@
+@import "../../assets/scss/mixins";
+
+.navBarContainer {
+  @include pagePadding;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  height: 2.5em;
+  width: 100%;
+  background: linear-gradient(to top, transparent, var(--black));
+  border-bottom: 1px solid red;
+  svg {
+    height: 50%;
+    width: auto;
+  }
+}
