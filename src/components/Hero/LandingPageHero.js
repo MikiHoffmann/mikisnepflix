@@ -1,12 +1,12 @@
-import "./LandingPageHero.scss";
-import HeroImage from "../../assets/images/landing-bg.jpg";
-import { IconArrowRight } from "../Icons/IconArrowRight";
-import { useContext } from "react";
-import { Link } from "react-router-dom";
-import { LangContext } from "../../redux/language/languageContext";
+import "./LandingPageHero.scss"
+import HeroImage from "../../assets/images/landing-bg.jpg"
+import { IconArrowRight } from "../Icons/IconArrowRight"
+import { useContext } from "react"
+import { Link } from "react-router-dom"
+import { LangContext } from "../../redux/language/languageContext"
 
 const LandingPageHero = () => {
-  const { language } = useContext(LangContext);
+  const { language } = useContext(LangContext)
   return (
     <>
       <div className="heroWrapper">
@@ -31,25 +31,21 @@ const LandingPageHero = () => {
                 ? "Ready to watch? Enter your email to create or restart your membership."
                 : "Klaar om te kijken? Vul je email in en creëer of herstart je lidmaatschap."}
             </h3>
-            <div className="inputField">
-              <input
-                className="emailInput"
-                placeholder={
-                  language === "EN" ? "Email address" : "Email adres"
-                }
-              />
-              <Link to="/">
-                <button className="startButton">
-                  {language === "EN" ? "Get started" : "Start nu"}
-                  <IconArrowRight />
-                </button>
-              </Link>
-            </div>
+            <input
+              className="emailInput"
+              placeholder={language === "EN" ? "Email address" : "Email adres"}
+            />
+            <Link to="/">
+              <button className="startButton">
+                {language === "EN" ? "Get started" : "Start nu"}
+                <IconArrowRight />
+              </button>
+            </Link>
           </form>
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default LandingPageHero;
+export default LandingPageHero

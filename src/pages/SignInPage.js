@@ -1,5 +1,5 @@
-import SignInPageHero from "../components/Hero/SignInPageHero";
-import SignInPageFooter from "../components/Footer/SignInPageFooter";
+import SignInPageHero from "../components/Hero/SignInPageHero"
+import SignInPageFooter from "../components/Footer/SignInPageFooter"
 
 const SignInPage = () => {
   return (
@@ -7,7 +7,7 @@ const SignInPage = () => {
       <SignInPageHero />
       <SignInPageFooter />
     </>
-  );
-};
+  )
+}
 
-export default SignInPage;
+export default SignInPage

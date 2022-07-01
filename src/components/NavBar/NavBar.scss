@@ -5,13 +5,19 @@
   position: fixed;
   top: 0;
   display: flex;
+  flex-direction: row;
+  gap: .7em;
   align-items: center;
   height: 2.5em;
   width: 100%;
   background: linear-gradient(to top, transparent, var(--black));
   border-bottom: 1px solid red;
-  svg {
+  a {
     height: 50%;
-    width: auto;
+    svg {
+      height: 100%;
+      width: auto;
+    }
   }
+  
 }
