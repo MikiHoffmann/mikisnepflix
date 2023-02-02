@@ -46,6 +46,13 @@ const SignInPageHero = () => {
               </ButtonRed>
             </Link>
           </form>
+          <div class="signInBannerFooter">
+            <span>
+              {language === "EN"
+                ? "New to Nepflix? Register here."
+                : "Nepflix nieuw voor je? Registreer hier."}
+            </span>
+          </div>
         </div>
       </div>
     </>

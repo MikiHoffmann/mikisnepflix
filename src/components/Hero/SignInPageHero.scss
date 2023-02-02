@@ -22,7 +22,7 @@
   }
   .signInBannerTitle {
     width: 90%;
-    padding: 1.5em 0 2em 0;
+    padding: 1.5em 0 3em 0;
     svg {
       height: 2.5em;
       width: auto;
@@ -45,7 +45,6 @@
   }
   @include breakpoint(lg) {
     width: 40%;
-    padding: 4em 5em;
   }
 }
 .signInForm {
@@ -76,4 +75,7 @@
     border: none;
     outline: none;
   }
+}
+.signInBannerFooter {
+  padding: 2em 0;
 }
