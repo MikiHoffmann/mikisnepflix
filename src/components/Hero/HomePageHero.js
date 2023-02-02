@@ -1,5 +1,5 @@
 import "./HomePageHero.scss";
-import IMG from "../../assets/images/14.jpg";
+import IMG from "../../assets/images/06.jpg";
 const HomePageHero = () => {
   return (
     <>
