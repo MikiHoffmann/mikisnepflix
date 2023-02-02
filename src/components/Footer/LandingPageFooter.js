@@ -26,7 +26,7 @@ const LandingPageFooter = () => {
             {language === "EN" ? "Account" : "Account"}
           </span>
           <span className="footerFakeLink">
-            {language === "EN" ? "Media centre" : "Mediacenter"}
+            {language === "EN" ? "Media centre" : "Mediacentrum"}
           </span>
           <span className="footerFakeLink">
             {language === "EN"
@@ -52,7 +52,7 @@ const LandingPageFooter = () => {
             {language === "EN" ? "Privacy" : "Privacy"}
           </span>
           <span className="footerFakeLink">
-            {language === "EN" ? "Cookie Preferences" : "Cookie voorkeuren"}
+            {language === "EN" ? "Cookie Preferences" : "Cookievoorkeuren"}
           </span>
           <span className="footerFakeLink">
             {language === "EN" ? "Corporate information" : "Bedrijfsgegevens"}

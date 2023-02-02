@@ -27,7 +27,7 @@
 }
 .footerHeader {
   margin: 0 0 1.5em 0;
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 .footerLinkWrapper {
   display: flex;
@@ -35,6 +35,7 @@
   .footerFakeLink {
     flex: 50%;
     margin: 0 0 0.8em 0;
+    font-size: 0.85em;
     @include breakpoint(md) {
         flex: 33%;
     }
@@ -60,6 +61,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font-size: 0.9em;
     @media only screen and (min-width: 31.25em) {
       flex-direction: row;
     }
