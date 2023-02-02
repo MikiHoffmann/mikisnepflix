@@ -2,6 +2,9 @@ import "./Footer.scss"
 import { useContext } from "react"
 import { LangContext } from "../../redux/language/languageContext"
 import { IconFacebook } from "../Icons/IconFacebook"
+import { IconInstagram } from "../Icons/IconInstagram"
+import { IconTwitter } from "../Icons/IconTwitter"
+import { IconYoutube } from "../Icons/IconYoutube"
 
 const MainFooter = () => {
   const { language } = useContext(LangContext)
@@ -10,6 +13,9 @@ const MainFooter = () => {
       <div className="footerWrapper">
         <div className="footerHeader">
           <IconFacebook />
+          <IconInstagram />
+          <IconTwitter />
+          <IconYoutube />
         </div>
         <div className="footerLinkWrapper">
           <span className="footerFakeLink">

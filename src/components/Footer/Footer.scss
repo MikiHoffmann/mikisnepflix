@@ -28,6 +28,9 @@
 .footerHeader {
   margin: 0 0 1.5em 0;
   font-size: 1.2em;
+  svg:not(svg:nth-of-type(1)) {
+    margin-left: 1.7em;
+  }
 }
 .footerLinkWrapper {
   display: flex;
