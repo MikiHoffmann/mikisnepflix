@@ -15,6 +15,15 @@ const NavBar = () => {
         <Link to="/home">
           <span>{language === "EN" ? "Homepage" : "Homepagina"}</span>
         </Link>
+        <Link to="/">
+          <span>{language === "EN" ? "Movies" : "Films"}</span>
+        </Link>
+        <Link to="/">
+          <span>Series</span>
+        </Link>
+        <Link to="/">
+          <span>{language === "EN" ? "My list" : "Mijn lijst"}</span>
+        </Link>
       </div>
     </>
   )
