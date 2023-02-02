@@ -19,5 +19,5 @@ export const NetflixLogo = () => {
         </clipPath>
       </defs>
     </svg>
-  );
-};
+  )
+}

@@ -1,6 +1,6 @@
 import "./NavBar.scss"
 import { Link } from "react-router-dom"
-import { NetflixLogo } from "../Logos/NetflixLogo"
+import { NepflixLogo } from "../Logos/NepflixLogo"
 import { useContext } from "react"
 import { LangContext } from "../../redux/language/languageContext"
 
@@ -10,7 +10,7 @@ const NavBar = () => {
     <>
       <div className="navBarContainer">
         <Link to="/">
-          <NetflixLogo />
+          <NepflixLogo />
         </Link>
         <Link to="/home">
           <span>{language === "EN" ? "Homepage" : "Homepagina"}</span>

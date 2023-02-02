@@ -1,5 +1,5 @@
 import "./LandingPageNavBar.scss"
-import { NetflixLogo } from "../../components/Logos/NetflixLogo"
+import { NepflixLogo } from "../../components/Logos/NepflixLogo"
 import LanguageSelector from "../LanguageSelector/LanguageSelector"
 import ButtonRed from "../ButtonRed/ButtonRed"
 import { useContext } from "react"
@@ -12,7 +12,7 @@ const LandingPageNavBar = () => {
   return (
     <>
       <div className="navBarWrapper">
-        <NetflixLogo />
+        <NepflixLogo />
         <div className="buttonContainer">
           <LanguageSelector />
           <Link to="/signin">

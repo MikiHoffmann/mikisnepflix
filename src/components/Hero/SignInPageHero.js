@@ -1,6 +1,6 @@
 import "./SignInPageHero.scss"
 import HeroImage from "../../assets/images/landing-bg.jpg"
-import { NetflixLogo } from "../../components/Logos/NetflixLogo"
+import { NepflixLogo } from "../../components/Logos/NepflixLogo"
 import { LangContext } from "../../redux/language/languageContext"
 import { useContext } from "react"
 import { Link } from "react-router-dom"
@@ -17,7 +17,7 @@ const SignInPageHero = () => {
       <div className="signInBannerWrapper">
         <div className="signInBannerTitle">
           <Link to="/">
-            <NetflixLogo />
+            <NepflixLogo />
           </Link>
         </div>
         <div className="signInBanner">

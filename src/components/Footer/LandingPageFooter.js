@@ -11,8 +11,8 @@ const LandingPageFooter = () => {
       <div className="footerWrapper">
         <div className="footerHeader">
           {language === "EN"
-            ? "Questions? Call 0800-022-9647"
-            : "Vragen? Bel 0800-022-9647"}
+            ? "Questions? Call 0800-022-9547-900"
+            : "Vragen? Bel 0800-022-9547-900"}
         </div>
 
         <div className="footerLinkWrapper">
@@ -43,7 +43,7 @@ const LandingPageFooter = () => {
             {language === "EN" ? "Buy Gift Cards" : "Cadeaubonnen kopen"}
           </span>
           <span className="footerFakeLink">
-            {language === "EN" ? "Ways to watch" : "Hoe kun je Netflix kijken?"}
+            {language === "EN" ? "Ways to watch" : "Hoe kun je Nepflix kijken?"}
           </span>
           <span className="footerFakeLink">
             {language === "EN" ? "Terms of use" : "Gebruiksvoorwaarden"}

@@ -12,8 +12,8 @@ const SignInPageFooter = () => {
         <div className="footerWrapper">
           <div className="footerHeader">
             {language === "EN"
-              ? "Questions? Call 0800-022-9647"
-              : "Vragen? Bel 0800-022-9647"}
+              ? "Questions? Call 0800-022-9547-900"
+              : "Vragen? Bel 0800-022-9547-900"}
           </div>
 
           <div className="footerLinkWrapper">
