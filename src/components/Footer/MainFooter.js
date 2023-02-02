@@ -1,20 +1,16 @@
 import "./Footer.scss"
 import { useContext } from "react"
-
 import { LangContext } from "../../redux/language/languageContext"
-import LanguageSelector from "../LanguageSelector/LanguageSelector"
+import { IconFacebook } from "../Icons/IconFacebook"
 
-const LandingPageFooter = () => {
+const MainFooter = () => {
   const { language } = useContext(LangContext)
   return (
     <>
       <div className="footerWrapper">
         <div className="footerHeader">
-          {language === "EN"
-            ? "Questions? Call 0800-022-9647"
-            : "Vragen? Bel 0800-022-9647"}
+          <IconFacebook />
         </div>
-
         <div className="footerLinkWrapper">
           <span className="footerFakeLink">
             {language === "EN" ? "FAQ" : "Veelgestelde vragen"}
@@ -71,22 +67,9 @@ const LandingPageFooter = () => {
           </span>
           <span className="footerFakeLink"></span>
         </div>
-
-        <div className="selectorContainer">
-          <LanguageSelector />
-        </div>
-
-        <div className="footerBottom">
-          <span>
-            {language === "EN" ? "Nepflix Netherlands" : "Nepflix Nederland"} by
-            Miki
-          </span>
-          <a href="https://www.miki101.nl" target="_blank">
-            www.miki101.nl
-          </a>
-        </div>
       </div>
     </>
   )
 }
-export default LandingPageFooter
+
+export default MainFooter

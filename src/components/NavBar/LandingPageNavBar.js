@@ -1,12 +1,12 @@
-import "./LandingPageNavBar.scss";
-import { NetflixLogo } from "../../components/Logos/NetflixLogo";
-import LanguageSelector from "../LanguageSelector/LanguageSelector";
-import ButtonRed from "../ButtonRed/ButtonRed";
-import { useContext } from "react";
-import { Link } from "react-router-dom";
-import { LangContext } from "../../redux/language/languageContext";
+import "./LandingPageNavBar.scss"
+import { NetflixLogo } from "../../components/Logos/NetflixLogo"
+import LanguageSelector from "../LanguageSelector/LanguageSelector"
+import ButtonRed from "../ButtonRed/ButtonRed"
+import { useContext } from "react"
+import { Link } from "react-router-dom"
+import { LangContext } from "../../redux/language/languageContext"
 const LandingPageNavBar = () => {
-  const { language } = useContext(LangContext);
+  const { language } = useContext(LangContext)
   //console.log(language);
 
   return (
@@ -21,7 +21,7 @@ const LandingPageNavBar = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default LandingPageNavBar;
+export default LandingPageNavBar
