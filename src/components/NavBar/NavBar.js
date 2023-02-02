@@ -9,13 +9,13 @@ const NavBar = () => {
   const { language } = useContext(LangContext)
   const [isScrolled, setIsScrolled] = useState(false)
   window.onscroll = () => {
-    setIsScrolled(window.pageYOffset === 0 ? true : false)
+    setIsScrolled(window.pageYOffset === 0 ? false : true)
     return () => (window.onscroll = 0)
   }
   
   return (
     <>
-      <div className={isScrolled ? "navBarContainer" : "navBarContainer isScrolled"}>
+      <div className={isScrolled ? "navBarContainer isScrolled" : "navBarContainer"}>
         <Link to="/">
           <NepflixLogo />
         </Link>
