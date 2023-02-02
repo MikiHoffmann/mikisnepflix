@@ -3,12 +3,19 @@ import { Link } from "react-router-dom"
 import { NepflixLogo } from "../Logos/NepflixLogo"
 import { useContext } from "react"
 import { LangContext } from "../../redux/language/languageContext"
+import { useState } from "react"
 
 const NavBar = () => {
   const { language } = useContext(LangContext)
+  const [isScrolled, setIsScrolled] = useState(false)
+  window.onscroll = () => {
+    setIsScrolled(window.pageYOffset === 0 ? true : false)
+    return () => (window.onscroll = 0)
+  }
+  
   return (
     <>
-      <div className="navBarContainer">
+      <div className={isScrolled ? "navBarContainer" : "navBarContainer isScrolled"}>
         <Link to="/">
           <NepflixLogo />
         </Link>

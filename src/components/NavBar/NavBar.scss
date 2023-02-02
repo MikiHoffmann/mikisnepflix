@@ -11,7 +11,7 @@
   height: 2.5em;
   width: 100%;
   background: linear-gradient(to top, transparent, var(--black));
-  border-bottom: 1px solid red;
+  transition: .6s;
   a {
     height: 50%;
     svg {
@@ -20,4 +20,7 @@
     }
   }
   
+}
+.isScrolled {
+  background-color: var(--black);
 }
