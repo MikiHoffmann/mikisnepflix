@@ -13,21 +13,16 @@ const MainFooter = () => {
         </div>
         <div className="footerLinkWrapper">
           <span className="footerFakeLink">
-            {language === "EN" ? "FAQ" : "Veelgestelde vragen"}
+            {language === "EN" ? "Audioscription" : "Audioscriptie"}
+          </span>
+          <span className="footerFakeLink">
+            {language === "EN" ? "Relations with investors" : "Relaties met investeerders"}
+          </span>
+          <span className="footerFakeLink">
+            {language === "EN" ? "Legal notices" : "Wettelijke bepalingen"}
           </span>
           <span className="footerFakeLink">
             {language === "EN" ? "Help centre" : "Helpcentrum"}
-          </span>
-          <span className="footerFakeLink">
-            {language === "EN" ? "Account" : "Account"}
-          </span>
-          <span className="footerFakeLink">
-            {language === "EN" ? "Media centre" : "Mediacenter"}
-          </span>
-          <span className="footerFakeLink">
-            {language === "EN"
-              ? "Investor Relations"
-              : "Relaties met investeerders"}
           </span>
           <span className="footerFakeLink">
             {language === "EN" ? "Jobs" : "Vacatures"}
