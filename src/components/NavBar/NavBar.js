@@ -4,8 +4,10 @@ import { NepflixLogo } from "../Logos/NepflixLogo"
 import { useContext } from "react"
 import { LangContext } from "../../redux/language/languageContext"
 import { useState } from "react"
-import { IconSearch } from "../Icons/IconSearch"
+import SearchBar from "./SearchBar"
 import { IconNotification } from "../Icons/IconNotification"
+import { IconAccount } from "../Icons/IconAccount"
+import { IconCaretDown } from "../Icons/IconCaretDown"
 
 const NavBar = () => {
   const { language } = useContext(LangContext)
@@ -41,8 +43,10 @@ const NavBar = () => {
             </Link>
           </div>
           <div className="menuContainer">
-            <IconSearch />
+            <SearchBar />
             <IconNotification />
+            <IconAccount />
+            <IconCaretDown />
           </div>
         </div>
       </div>
