@@ -1,12 +1,26 @@
 import "./SearchBar.scss"
 import { IconSearch } from "../Icons/IconSearch"
+import { useState } from "react"
 
 const SearchBar = () => {
-    const search = document.getElementById('search')
-    console.log(search)
+  const [searchToggle, setSearchToggle] = useState(false)
+  const startSearchInput = () => {
+    setSearchToggle(!searchToggle)
+  }
   return (
     <>
-      <IconSearch id="search"/>
+      <div className="searchBar">
+        <div
+          className={`searchBarInputClose ${
+            searchToggle && " searchBarInputActive"
+          }`}
+          onClick={startSearchInput}
+        >
+          <span className="searchIcon">
+            <IconSearch />
+          </span>
+        </div>
+      </div>
     </>
   )
 }
