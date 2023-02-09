@@ -6,7 +6,7 @@ import { LangContext } from "../../redux/language/languageContext"
 import { useState } from "react"
 import SearchBar from "./SearchBar"
 import { IconNotification } from "../Icons/IconNotification"
-import { IconAccount } from "../Icons/IconAccount"
+import { NepflixProfileImg } from "../Icons/Nepflix-profile-img"
 import { IconCaretDown } from "../Icons/IconCaretDown"
 
 const NavBar = () => {
@@ -45,7 +45,9 @@ const NavBar = () => {
           <div className="menuContainer">
             <SearchBar />
             <IconNotification />
-            <IconAccount />
+            <span className="nepflixProfileImg">
+              <NepflixProfileImg />
+            </span>
             <IconCaretDown />
           </div>
         </div>

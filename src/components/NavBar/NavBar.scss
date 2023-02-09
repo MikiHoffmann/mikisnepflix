@@ -45,6 +45,20 @@
         height: 60%;
         width: auto;
       }
+      .nepflixProfileImg {
+        height: 70%;
+        width: auto;
+        svg {
+          height: 100%;
+          width: auto;
+          background-color: var(--white);
+          border: 0.3px solid var(--white);
+          border-radius: 5px;
+          path {
+            fill: var(--purple)
+          }
+        }
+      }
     }
   }
 }
