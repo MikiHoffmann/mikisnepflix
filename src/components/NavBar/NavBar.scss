@@ -50,6 +50,7 @@
         display: flex;
         align-items: center;
         gap: 0.5em;
+        height: 100%;
         transition: all 0.3s ease-in-out;
         cursor: pointer;
         .nepflixProfileImgContainer {
@@ -66,19 +67,15 @@
             }
           }
         }
-        &:hover {
-          .dropDownMenuArrow {
-            transform: rotate(180deg);
-          }
-          .dropDown {
-            display: flex;
-          }
-        }
         .dropDownMenuArrow {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
           height: 30%;
           width: auto;
+          transition: all 0.3s ease-in-out;
           svg {
-            height: .9em;
+            height: 0.9em;
             width: auto;
           }
         }
@@ -86,20 +83,42 @@
           display: none;
           flex-direction: column;
           position: absolute;
-          top: 110%;
+          top: 100%;
           right: 0;
           width: 400%;
-          padding: 0.6em;
+          padding: .4em 0;
           background-color: var(--black);
-          transition: all .3s ease-in-out;
+          transition: all 0.3s ease-in-out;
           .dropDownItem {
             display: inline-flex;
             width: fit-content;
             align-items: center;
-            gap: .4em;
+            gap: 0.4em;
+            padding: .4em 0.6em;
             &:hover {
               text-decoration: underline;
             }
+          }
+          .dropDownItem:last-of-type {
+            justify-content: center;
+            width: 100%;
+            margin-top: .3em;
+            padding: .9em 0 .7em 0;
+            text-align: center;
+            color: var(--whiteOpacity);
+            border-top: .3px solid var(--whiteOpacity);
+            &:hover {
+              color: var(--white);
+              text-decoration: none;
+            }
+          }
+        }
+        &:hover {
+          .dropDownMenuArrow {
+            transform: rotate(-180deg);
+          }
+          .dropDown {
+            display: flex;
           }
         }
       }

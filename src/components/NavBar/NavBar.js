@@ -63,6 +63,9 @@ const NavBar = () => {
                   <IconAccount />
                   Account
                 </span>
+                <span className="dropDownItem">
+                  <Link to="/">uitloggen</Link>
+                </span>
               </div>
             </div>
           </div>
