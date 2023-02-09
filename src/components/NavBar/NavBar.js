@@ -57,14 +57,20 @@ const NavBar = () => {
               <div className="dropDown">
                 <span className="dropDownItem">
                   <IconPencil />
-                  Profielen beheren
+                  <span>
+                    {language === "EN"
+                      ? "Manage profiles"
+                      : "Profielen beheren"}
+                  </span>
                 </span>
                 <span className="dropDownItem">
                   <IconAccount />
                   Account
                 </span>
                 <span className="dropDownItem">
-                  <Link to="/">uitloggen</Link>
+                  <Link to="/">
+                    <span>{language === "EN" ? "sign out" : "uitloggen"}</span>
+                  </Link>
                 </span>
               </div>
             </div>
