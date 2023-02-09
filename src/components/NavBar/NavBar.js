@@ -8,6 +8,8 @@ import SearchBar from "./SearchBar"
 import { IconNotification } from "../Icons/IconNotification"
 import { NepflixProfileImg } from "../Icons/Nepflix-profile-img"
 import { IconCaretDown } from "../Icons/IconCaretDown"
+import { IconPencil } from "../Icons/IconPencil"
+import { IconAccount } from "../Icons/IconAccount"
 
 const NavBar = () => {
   const { language } = useContext(LangContext)
@@ -45,10 +47,24 @@ const NavBar = () => {
           <div className="menuContainer">
             <SearchBar />
             <IconNotification />
-            <span className="nepflixProfileImg">
-              <NepflixProfileImg />
-            </span>
-            <IconCaretDown />
+            <div className="dropDownMenu">
+              <span className="nepflixProfileImgContainer">
+                <NepflixProfileImg />
+              </span>
+              <span className="dropDownMenuArrow">
+                <IconCaretDown />
+              </span>
+              <div className="dropDown">
+                <span className="dropDownItem">
+                  <IconPencil />
+                  Profielen beheren
+                </span>
+                <span className="dropDownItem">
+                  <IconAccount />
+                  Account
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </div>

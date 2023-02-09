@@ -45,17 +45,61 @@
         height: 60%;
         width: auto;
       }
-      .nepflixProfileImg {
-        height: 70%;
-        width: auto;
-        svg {
-          height: 100%;
+      .dropDownMenu {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+        .nepflixProfileImgContainer {
+          height: 70%;
           width: auto;
-          background-color: var(--white);
-          border: 0.3px solid var(--white);
-          border-radius: 5px;
-          path {
-            fill: var(--purple)
+          svg {
+            height: 100%;
+            width: auto;
+            background-color: var(--white);
+            border: 0.3px solid var(--white);
+            border-radius: 5px;
+            path {
+              fill: var(--purple);
+            }
+          }
+        }
+        &:hover {
+          .dropDownMenuArrow {
+            transform: rotate(180deg);
+          }
+          .dropDown {
+            display: flex;
+          }
+        }
+        .dropDownMenuArrow {
+          height: 30%;
+          width: auto;
+          svg {
+            height: .9em;
+            width: auto;
+          }
+        }
+        .dropDown {
+          display: none;
+          flex-direction: column;
+          position: absolute;
+          top: 110%;
+          right: 0;
+          width: 400%;
+          padding: 0.6em;
+          background-color: var(--black);
+          transition: all .3s ease-in-out;
+          .dropDownItem {
+            display: inline-flex;
+            width: fit-content;
+            align-items: center;
+            gap: .4em;
+            &:hover {
+              text-decoration: underline;
+            }
           }
         }
       }
