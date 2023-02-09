@@ -1,10 +1,13 @@
 import "./HomePageHero.scss";
-import IMG from "../../assets/images/06.jpg";
+import Video from "../../assets/videos/homehero.mp4";
 const HomePageHero = () => {
   return (
     <>
       <div className="heroContainer">
-          <img src={`${IMG}`} alt='hero'/>
+          <video src={`${Video}`} autoPlay loop muted></video>
+          <div className="heroButtonContainer">
+            
+          </div>
       </div>
     </>
   );

@@ -9,6 +9,8 @@ const MoviesPage = () => {
       <NavBar />
       <HomePageHero />
       <ImageLane />
+      <ImageLane />
+      <ImageLane />
       <MainFooter />
     </>
   )

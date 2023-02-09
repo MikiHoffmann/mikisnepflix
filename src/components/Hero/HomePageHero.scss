@@ -1,11 +1,21 @@
 .heroContainer {
+    position: relative;
     height: auto;
     width: 100%;
     background-position: scroll;
     background-repeat: no-repeat;
     background-size: cover;
-    img {
+    video {
         height: auto;
         width: 100%;
+    }
+    .heroButtonContainer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(to top, var(--black), transparent);
+        //z-index: 1;
     }
 }

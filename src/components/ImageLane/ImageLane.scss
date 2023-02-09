@@ -1,6 +1,18 @@
 .imageLaneContainer {
-    display: inline-flex;
-    height: 6.5em;
+    position: relative;
+    top: -7em;
+    display: flex;
+    flex-direction: column;
+    height: 14em;
     width: 100%;
-    border: 1px solid red;
+    padding-left: 3.3125em;
+    .imageLaneTitle {
+        margin-bottom: 1em;
+    }
+    .imageLaneItemContainer {
+        display: inline-flex;
+        gap: .6em;
+        height: 8em;
+        overflow-x: hidden;
+    }
 }
